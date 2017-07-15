@@ -1,0 +1,117 @@
+// Colors:
+$grey: #d1d1d8;
+$darkblue: #19193c;
+$blue: #5b5bff;
+
+$margin:10px;
+*{
+  font-family: 'Raleway', sans-serif;
+  font-weight:400;
+  color:$darkblue;
+}
+body{
+  background:#fff;
+  margin:0;
+}
+.all{
+  max-width:860px;
+  margin:0 auto;
+}
+.face{
+  position:relative;
+  width:200px;
+  height:200px;
+  margin: 0 auto $margin auto;
+  svg{
+    position:absolute;
+    width:100%;
+    height:100%;
+  }
+  #smile-open{
+    visibility:hidden;
+  }
+  #smile-normal{
+    visibility:visible;
+  }
+  &.excited{
+    #smile-open{
+      visibility:visible;
+    }
+    #smile-normal{
+      visibility:hidden;
+    }
+    #eyebrow{
+      top:-2px;
+    }
+  }
+}
+.header-links{
+  display:flex;
+  justify-content:space-around;
+  max-width:400px;
+  margin:$margin auto;  
+  span{
+    cursor:pointer;
+    font-size:26px;
+    font-weight:800;
+    &:hover{
+      color:$blue;
+    }
+  }
+  
+}
+.tile-container{
+  width:100%;
+  text-align:center;
+}
+
+.tile {
+  cursor:pointer;
+  background:#eee;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  margin:$margin;
+  width:400px;
+  height:300px;
+  margin-bottom:$margin;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.tile:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.contact{
+  display:none;
+}
+.about,.contact{
+  max-width:400px;
+  margin:0 auto;
+  display:none;
+  h1{
+    margin-bottom:$margin;
+  }
+  .separator{
+    margin-bottom:$margin;
+    background-color:$blue;
+    height:4px;
+    width:80px;
+    border-radius:10px 10px;
+  }
+  ul > li {
+    color:$blue;
+  }
+  .logos{
+    text-align:center;
+  }
+  .logos svg{
+    width:32px;
+    height:32px;
+    fill:#d1d1d8;
+    margin:0 6px;
+    &:hover{
+      fill:$blue;
+    }
+  }
+}

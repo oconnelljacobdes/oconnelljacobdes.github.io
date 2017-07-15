@@ -1,0 +1,115 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #19193c;
+}
+
+body {
+  background: #fff;
+  margin: 0;
+}
+
+.all {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.face {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 10px auto;
+}
+.face svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.face #smile-open {
+  visibility: hidden;
+}
+.face #smile-normal {
+  visibility: visible;
+}
+.face.excited #smile-open {
+  visibility: visible;
+}
+.face.excited #smile-normal {
+  visibility: hidden;
+}
+.face.excited #eyebrow {
+  top: -2px;
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-around;
+  max-width: 400px;
+  margin: 10px auto;
+}
+.header-links span {
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: 800;
+}
+.header-links span:hover {
+  color: #5b5bff;
+}
+
+.tile-container {
+  width: 100%;
+  text-align: center;
+}
+
+.tile {
+  cursor: pointer;
+  background: #eee;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  width: 400px;
+  height: 300px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.tile:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.contact {
+  display: none;
+}
+
+.about, .contact {
+  max-width: 400px;
+  margin: 0 auto;
+  display: none;
+}
+.about h1, .contact h1 {
+  margin-bottom: 10px;
+}
+.about .separator, .contact .separator {
+  margin-bottom: 10px;
+  background-color: #5b5bff;
+  height: 4px;
+  width: 80px;
+  border-radius: 10px 10px;
+}
+.about ul > li, .contact ul > li {
+  color: #5b5bff;
+}
+.about .logos, .contact .logos {
+  text-align: center;
+}
+.about .logos svg, .contact .logos svg {
+  width: 32px;
+  height: 32px;
+  fill: #d1d1d8;
+  margin: 0 6px;
+}
+.about .logos svg:hover, .contact .logos svg:hover {
+  fill: #5b5bff;
+}
