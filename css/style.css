@@ -101,16 +101,16 @@ body {
 .about ul > li, .contact ul > li {
   color: #5b5bff;
 }
-.about .logos, .contact .logos {
+.logos {
   text-align: center;
 }
-.about .logos svg, .contact .logos svg {
+.logos svg {
   width: 32px;
   height: 32px;
   fill: #d1d1d8;
   margin: 0 6px;
 }
-.about .logos svg:hover, .contact .logos svg:hover {
+.logos svg:hover {
   fill: #5b5bff;
 }
 
