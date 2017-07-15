@@ -90,13 +90,14 @@ body{
   margin:0 auto;
   display:none;
   h1{
+    font-weight:800;
     margin-bottom:$margin;
   }
   .separator{
     margin-bottom:$margin;
     background-color:$blue;
     height:4px;
-    width:80px;
+    width:60px;
     border-radius:10px 10px;
   }
   ul > li {
@@ -114,4 +115,8 @@ body{
       fill:$blue;
     }
   }
+}
+.copy, .copy li{
+  line-height: 24px;
+  
 }

@@ -89,13 +89,14 @@ body {
   display: none;
 }
 .about h1, .contact h1 {
+  font-weight: 800;
   margin-bottom: 10px;
 }
 .about .separator, .contact .separator {
   margin-bottom: 10px;
   background-color: #5b5bff;
   height: 4px;
-  width: 80px;
+  width: 60px;
   border-radius: 10px 10px;
 }
 .about ul > li, .contact ul > li {
@@ -112,4 +113,8 @@ body {
 }
 .about .logos svg:hover, .contact .logos svg:hover {
   fill: #5b5bff;
+}
+
+.copy, .copy li {
+  line-height: 24px;
 }
