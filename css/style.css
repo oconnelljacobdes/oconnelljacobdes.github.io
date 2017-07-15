@@ -1,7 +1,9 @@
 *::selection {
+	color: white;
   background: #5b5bff; / WebKit/Blink Browsers /
 }
 *::-moz-selection {
+	color: white;
   background: #5b5bff; / Gecko Browsers /
 }
 
