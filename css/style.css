@@ -62,7 +62,6 @@ body {
 }
 
 .tile {
-  cursor: pointer;
   background: #eee;
   border-radius: 2px;
   display: inline-block;
@@ -79,6 +78,9 @@ body {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+.tile img{width: 100%;
+    height: 100%;}
+	
 .contact {
   display: none;
 }
