@@ -1,3 +1,10 @@
+*::selection {
+  background: #5b5bff; / WebKit/Blink Browsers /
+}
+*::-moz-selection {
+  background: #5b5bff; / Gecko Browsers /
+}
+
 * {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
