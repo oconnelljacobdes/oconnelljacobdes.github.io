@@ -103,6 +103,7 @@ body {
 }
 .logos {
   text-align: center;
+  margin: 40px 0 40px 0;
 }
 .logos svg {
   width: 32px;
