@@ -98,10 +98,10 @@ body {
 }
 .about h1, .contact h1 {
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .about .separator, .contact .separator {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background-color: #5b5bff;
   height: 4px;
   width: 60px;
