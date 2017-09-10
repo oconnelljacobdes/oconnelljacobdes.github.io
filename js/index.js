@@ -38,7 +38,6 @@ function lookAt(ob, target, maxDist, maxRange) {
   speedMod = speedMod > 1 ? 1 : speedMod;
   var xx = dX / dH * maxDist * speedMod;
   var yy = dY / dH * maxDist * speedMod;
-  console.log(speedMod);
   ob.css({top:yy,left:xx});
 }
 $('.nav').click(function(){

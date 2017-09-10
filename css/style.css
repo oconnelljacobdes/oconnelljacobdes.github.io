@@ -1,10 +1,5 @@
-*::selection {
-	color: white;
-  background: #5b5bff; / WebKit/Blink Browsers /
-}
-*::-moz-selection {
-	color: white;
-  background: #5b5bff; / Gecko Browsers /
+::-webkit-scrollbar {
+  display: none;
 }
 
 * {
@@ -13,11 +8,38 @@
   color: #19193c;
 }
 
+html, body {
+  height: 100vh;
+}
+
 body {
   background: #fff;
   margin: 0;
+  /*height:100vh;*/
 }
 
+.parent, .child {
+  /* necessary for sticky footer:*/
+  height: 100%;
+}
+
+/*Hide scrollbar:*/
+/*
+.parent{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.child{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px;
+    overflow-y: scroll;
+}*/
 .all {
   max-width: 860px;
   margin: 0 auto;
@@ -61,8 +83,10 @@ body {
   font-size: 26px;
   font-weight: 800;
 }
-.header-links span:hover {
-  color: #5b5bff;
+@media (min-width: 521px) {
+  .header-links span:hover {
+    color: #5b5bff;
+  }
 }
 
 .tile-container {
@@ -71,7 +95,8 @@ body {
 }
 
 .tile {
-  background-size: contain;
+  cursor: pointer;
+  background: contain;
   border-radius: 2px;
   display: inline-block;
   position: relative;
@@ -82,11 +107,17 @@ body {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+@media (max-width: 520px) {
+  .tile {
+    margin: 5%;
+    width: 90%;
+  }
+}
 
 .tile:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-	
+
 .contact {
   display: none;
 }
@@ -96,6 +127,12 @@ body {
   margin: 0 auto;
   display: none;
 }
+@media (max-width: 520px) {
+  .about, .contact {
+    margin: 5%;
+    width: 90%;
+  }
+}
 .about h1, .contact h1 {
   font-weight: 800;
   margin-bottom: 10px;
@@ -104,26 +141,41 @@ body {
   margin-bottom: 10px;
   background-color: #5b5bff;
   height: 4px;
-  width: 50px;
+  width: 60px;
   border-radius: 10px 10px;
 }
 .about ul > li, .contact ul > li {
   color: #5b5bff;
 }
-.logos {
-  text-align: center;
-  margin: 40px 0 40px 0;
+
+.copy, .copy li {
+  line-height: 24px;
 }
-.logos svg {
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -56px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.site-footer, .page-wrap:after {
+  height: 56px;
+}
+
+.site-footer .logos {
+  text-align: center;
+}
+.site-footer .logos svg {
   width: 32px;
   height: 32px;
   fill: #d1d1d8;
   margin: 0 6px;
 }
-.logos svg:hover {
+.site-footer .logos svg:hover {
   fill: #5b5bff;
-}
-
-.copy, .copy li {
-  line-height: 24px;
 }

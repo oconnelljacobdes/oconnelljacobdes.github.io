@@ -2,17 +2,46 @@
 $grey: #d1d1d8;
 $darkblue: #19193c;
 $blue: #5b5bff;
+$bp-mobile: 520px;
 
 $margin:10px;
+::-webkit-scrollbar { 
+    display: none; 
+}
 *{
   font-family: 'Raleway', sans-serif;
   font-weight:400;
   color:$darkblue;
 }
+html,body{
+  height:100vh;
+}
 body{
   background:#fff;
   margin:0;
+  /*height:100vh;*/
 }
+.parent,.child{
+  /* necessary for sticky footer:*/
+  height:100%;
+}
+/*Hide scrollbar:*/
+/*
+.parent{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.child{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px;
+    overflow-y: scroll;
+}*/
 .all{
   max-width:860px;
   margin:0 auto;
@@ -54,9 +83,12 @@ body{
     cursor:pointer;
     font-size:26px;
     font-weight:800;
-    &:hover{
-      color:$blue;
+    @media (min-width:$bp-mobile+1){
+      &:hover{
+        color:$blue;
+      }  
     }
+    
   }
   
 }
@@ -77,6 +109,11 @@ body{
   margin-bottom:$margin;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  @media (max-width: $bp-mobile){
+    margin:5%;
+    width:90%;
+    
+  }
 }
 
 .tile:hover {
@@ -87,7 +124,12 @@ body{
 }
 .about,.contact{
   max-width:400px;
-  margin:0 auto;
+  margin:0 auto;  
+  @media (max-width: $bp-mobile){
+    margin:5%;
+    width:90%;
+    
+  }
   display:none;
   h1{
     font-weight:800;
@@ -103,6 +145,26 @@ body{
   ul > li {
     color:$blue;
   }
+}
+.copy, .copy li{
+  line-height: 24px;
+  
+}
+
+$footer-height:36px + $margin*2;
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -$footer-height; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: $footer-height; 
+}
+.site-footer {
   .logos{
     text-align:center;
   }
@@ -115,8 +177,4 @@ body{
       fill:$blue;
     }
   }
-}
-.copy, .copy li{
-  line-height: 24px;
-  
 }
