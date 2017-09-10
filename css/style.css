@@ -96,7 +96,7 @@ body {
 
 .tile {
   cursor: pointer;
-  background: contain;
+  background-size: contain;
   border-radius: 2px;
   display: inline-block;
   position: relative;
