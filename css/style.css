@@ -74,16 +74,31 @@ body {
 
 .header-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 400px;
   margin: 10px auto;
+}
+
+.header-links .inner{
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+
+}
+@media (max-width: 419px) {  
+  .header-links {
+    margin: 0;
+  }
+  .header-links .inner{
+    margin: 0 20px;
+  }
 }
 .header-links span {
   cursor: pointer;
   font-size: 26px;
   font-weight: 800;
 }
-@media (min-width: 521px) {
+@media (min-width: 520px) {
   .header-links span:hover {
     color: #5b5bff;
   }
@@ -107,10 +122,47 @@ body {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-@media (max-width: 520px) {
+
+@media (max-width: 419px) {
   .tile {
-    margin: 5%;
-    width: 90%;
+    width: 360px;
+    height: 270px;
+  }
+}
+@media (max-width: 399px) {
+  .tile {
+    width: 340px;
+    height: 255px;
+  }
+}
+@media (max-width: 379px) {
+  .tile {
+    width: 320px;
+    height: 240px;
+  }
+}
+@media (max-width: 359px) {
+  .tile {
+    width: 300px;
+    height: 225px;
+  }
+}
+@media (max-width: 339px) {
+  .tile {
+    width: 280px;
+    height: 210px;
+  }
+}
+@media (max-width: 319px) {
+  .tile {
+    width: 260px;
+    height: 195px;
+  }
+}
+@media (max-width: 299px) {
+  .tile {
+    width: 260px;
+    height: 195px;
   }
 }
 
@@ -127,10 +179,9 @@ body {
   margin: 0 auto;
   display: none;
 }
-@media (max-width: 520px) {
+@media (max-width: 419px) {
   .about, .contact {
-    margin: 5%;
-    width: 90%;
+    margin: 20px;
   }
 }
 .about h1, .contact h1 {
@@ -150,6 +201,37 @@ body {
 
 .copy, .copy li {
   line-height: 24px;
+}
+.extra-mail-btn a{
+  text-decoration: none;
+}
+.extra-mail-btn div{
+  height: 32px;
+  line-height: 32px;
+  background-color: #5b5bff;
+  border-radius: 100px;
+  width: 200px;
+  margin: 20px auto;
+  color:white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.extra-mail-btn div:hover{
+  background-color: #4c4cff;
+  
+}
+
+@media (max-width: 519px) {
+  .extra-mail-btn div{
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+
+  }
+  
 }
 
 .page-wrap {
