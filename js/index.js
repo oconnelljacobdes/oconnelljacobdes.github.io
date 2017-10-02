@@ -40,7 +40,20 @@ function lookAt(ob, target, maxDist, maxRange) {
   var yy = dY / dH * maxDist * speedMod;
   ob.css({top:yy,left:xx});
 }
-$('.nav').click(function(){
-  $('.work,.about,.contact').hide();
-  $('.' + $(this).text().toLowerCase()).show();
+$('.tile').click(function(){
+   var data = $(this).data('showcase');
+   show('showcase');
+   switch(data){
+       case 'hh':
+        $('.showcase').html('<img src="https://lh5.googleusercontent.com/OpWOoelkWdF-yCK3gB95pXxGWzdQuheu8L3lscum9qwgAhQDDtyH8P5o4DuUUA0lQmXjZqGQhFzJpck=w838-h875" alt=""/><img src="https://lh5.googleusercontent.com/OpWOoelkWdF-yCK3gB95pXxGWzdQuheu8L3lscum9qwgAhQDDtyH8P5o4DuUUA0lQmXjZqGQhFzJpck=w838-h875" alt=""/>');
+       break;
+   }
 });
+$('.nav').click(function(){
+    show($(this).text().toLowerCase());
+});
+function show(clas){
+  $('.work,.about,.contact,.showcase').hide();
+  $('.' + clas).show();
+    
+}
