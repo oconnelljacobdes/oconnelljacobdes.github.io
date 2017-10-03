@@ -177,6 +177,7 @@ body {
 }
 .showcase img{
     display:block;
+    width:100%;
 }
 .contact {
   display: none;

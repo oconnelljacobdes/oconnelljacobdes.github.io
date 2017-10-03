@@ -45,7 +45,10 @@ $('.tile').click(function(){
    show('showcase');
    switch(data){
        case 'hh':
-        $('.showcase').html('<img src="https://lh5.googleusercontent.com/OpWOoelkWdF-yCK3gB95pXxGWzdQuheu8L3lscum9qwgAhQDDtyH8P5o4DuUUA0lQmXjZqGQhFzJpck=w838-h875" alt=""/><img src="https://lh5.googleusercontent.com/OpWOoelkWdF-yCK3gB95pXxGWzdQuheu8L3lscum9qwgAhQDDtyH8P5o4DuUUA0lQmXjZqGQhFzJpck=w838-h875" alt=""/>');
+        $('.showcase').html('<img src="https://i.imgur.com/SlkrqrR.jpg"/>  <img src="https://i.imgur.com/sXPBhk8.jpg"/>  <img src="https://i.imgur.com/OraDZhi.jpg"/>  <img src="https://i.imgur.com/U1KCC8Y.jpg"/>  <img src="https://i.imgur.com/bwSElRB.jpg"/>  <img src="https://i.imgur.com/EvSSNdY.jpg"/>  <img src="https://i.imgur.com/xSzcBAp.gif"/>');
+       break;
+       case 'marquette':
+        $('.showcase').html('marquette');
        break;
    }
 });
