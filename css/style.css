@@ -75,7 +75,7 @@ body {
 .header-links {
   display: flex;
   justify-content: space-between;
-  max-width: 400px;
+  max-width: 320px;
   margin: 10px auto;
 }
 
@@ -93,15 +93,34 @@ body {
     margin: 0 20px;
   }
 }
-.header-links span {
+.nav {
   cursor: pointer;
   font-size: 26px;
   font-weight: 800;
+  
+  
+  position: relative;
+  overflow:hidden;
+  transition: .3s;
+}
+.nav:after {
+    position: absolute;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background: #5b5bff;
+}
+.nav.active{
+    color: #5b5bff;
 }
 @media (min-width: 520px) {
-  .header-links span:hover {
-    color: #5b5bff;
-  }
+  .nav:hover:after{
+      width: 100%;
+      left: 0;
+    }
 }
 
 .tile-container {
@@ -173,7 +192,7 @@ body {
 .showcase{
     display:none;
     max-width:800px;
-    margin:0 auto;
+    margin:20px auto;
 }
 .showcase img{
     display:block;

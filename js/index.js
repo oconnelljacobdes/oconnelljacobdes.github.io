@@ -53,6 +53,8 @@ $('.tile').click(function(){
    }
 });
 $('.nav').click(function(){
+   $('.nav.active').removeClass('active');
+   $(this).addClass('active');
     show($(this).text().toLowerCase());
 });
 function show(clas){
