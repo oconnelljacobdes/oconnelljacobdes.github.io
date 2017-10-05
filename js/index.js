@@ -41,6 +41,7 @@ function lookAt(ob, target, maxDist, maxRange) {
   ob.css({top:yy,left:xx});
 }
 $('.tile').click(function(){
+   $('.nav.active').removeClass('active');
    var data = $(this).data('showcase');
    show('showcase');
    switch(data){
