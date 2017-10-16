@@ -86,9 +86,6 @@ body {
 
 }
 @media (max-width: 419px) {  
-  .header-links {
-    margin: 0;
-  }
   .header-links .inner{
     margin: 0 20px;
   }
