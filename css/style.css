@@ -209,11 +209,11 @@ body {
     margin: 20px;
   }
 }
-.about h1, .contact h1 {
+h1 {
   font-weight: 800;
   margin-bottom: 10px;
 }
-.about .separator, .contact .separator {
+.separator {
   margin-bottom: 10px;
   background-color: #5b5bff;
   height: 4px;
