@@ -1,0 +1,4 @@
+<h1>Haley's Hut</h1>
+          <div class="separator"></div>
+          <div class="copy">This project was a branding exercise used for a fashion boutique, that specializes in custom made clothing. My task was to come up with a friendly and energetic brand styling, logo, custom typeface, iconography, and potential future mockups incorporating the brand.
+          </div>
