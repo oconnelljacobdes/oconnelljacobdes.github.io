@@ -46,7 +46,7 @@ $('.tile').click(function(){
    show('showcase');
    switch(data){
        case 'hh':
-        $('.showcase').html('<div class="content"><h1>Haley\'s Hut</h1>           <div class="separator"></div>           <div class="copy">This project was a branding exercise used for a fashion boutique, that specializes in custom made clothing. My task was to come up with a friendly and energetic brand styling, logo, custom typeface, iconography, and potential future mockups incorporating the brand.           </div></div><br><img src="https://i.imgur.com/SlkrqrR.jpg"/>  <img src="https://i.imgur.com/sXPBhk8.jpg"/>  <img src="https://i.imgur.com/OraDZhi.jpg"/>  <img src="https://i.imgur.com/U1KCC8Y.jpg"/>  <img src="https://i.imgur.com/bwSElRB.jpg"/>  <img src="https://i.imgur.com/EvSSNdY.jpg"/>  <img src="https://i.imgur.com/xSzcBAp.gif"/>');
+        $('.showcase').html('<div class="content"><h1>Haley\'s Hut</h1>           <div class="separator"></div>           <div class="copy">This project was a branding exercise used for a fashion boutique, that specializes in custom made clothing. My task was to come up with a friendly and energetic brand styling, logo, custom typeface, iconography, and potential future mockups incorporating the brand.           </div></div><img src="https://i.imgur.com/SlkrqrR.jpg"/>  <img src="https://i.imgur.com/sXPBhk8.jpg"/>  <img src="https://i.imgur.com/OraDZhi.jpg"/>  <img src="https://i.imgur.com/U1KCC8Y.jpg"/>  <img src="https://i.imgur.com/bwSElRB.jpg"/>  <img src="https://i.imgur.com/EvSSNdY.jpg"/>  <img src="https://i.imgur.com/xSzcBAp.gif"/>');
        break;
        case 'marquette':
         $('.showcase').html('marquette');
