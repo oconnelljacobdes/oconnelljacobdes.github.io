@@ -208,6 +208,9 @@ body {
   .about, .contact {
     margin: 20px;
   }
+}
+
+@media (max-width: 839px) {
   .content{
     margin: 20px; 
   }
