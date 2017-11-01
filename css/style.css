@@ -22,7 +22,9 @@ body {
   /* necessary for sticky footer:*/
   height: 100%;
 }
-
+iframe{
+	margin:30px 0;
+}
 /*Hide scrollbar:*/
 /*
 .parent{

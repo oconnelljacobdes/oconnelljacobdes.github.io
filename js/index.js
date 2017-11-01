@@ -51,6 +51,10 @@ $('.tile').click(function(){
        case 'mindfullness':
 		$('.showcase').html('<div class="content"><h1>Mindfullness</h1>           <div class="separator"></div>           <div class="copy"> Small logo project for a eating disorder recovery community. Focus was on calming and organic visuals with a modern touch. </div></div> <img src="https://i.imgur.com/i9HwlHN.jpg"/><img src="https://i.imgur.com/uvkS58w.jpg"/><img src="https://i.imgur.com/3pt7slS.jpg"/><img src="https://i.imgur.com/8QdFcBa.jpg"/><img src="https://i.imgur.com/LLKNplg.jpg"/><img src="https://i.imgur.com/ZrR4JoD.jpg"/><img src="https://i.imgur.com/6FOvo5N.jpg"/><img src="https://i.imgur.com/2mfiyT4.jpg"/><img src="https://i.imgur.com/9DsO2nW.jpg"/><img src="https://i.imgur.com/CNxf6JT.jpg"/><img src="https://i.imgur.com/0uIi60t.jpg"/><img src="https://i.imgur.com/zFrghNS.jpg"/><img src="https://i.imgur.com/FyPrdPX.jpg"/><img src="https://i.imgur.com/iVSASAP.jpg"/><img src="https://i.imgur.com/GAugqwu.jpg"/>');
        break;
+	   case 'marquettecastingscooking':
+		$('.showcase').html('<div class="content"><h1>Marquette Castings Cooking</h1>           <div class="separator"></div>           <div class="copy"> Small logo project for a eating disorder recovery community. Focus was on calming and organic visuals with a modern touch. </div></div> <iframe src="https://player.vimeo.com/video/239526262" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><iframe src="https://player.vimeo.com/video/235914570" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><iframe src="https://player.vimeo.com/video/235619128" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+       break;
+	   
    }
 });
 $('.nav').click(function(){
