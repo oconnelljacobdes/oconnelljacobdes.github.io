@@ -56,7 +56,7 @@ body {
     overflow-y: scroll;
 }*/
 .all {
-  max-width: 860px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -86,12 +86,14 @@ body {
 .face.excited #eyebrow {
   top: -2px;
 }
-
+.header{
+	margin-bottom: 20px;
+}
 .header-links {
   display: flex;
   justify-content: space-between;
-  max-width: 320px;
-  margin: 10px auto;
+  max-width: 170px;
+  margin: 10px auto 0 auto;
 }
 
 .header-links .inner{
@@ -246,6 +248,13 @@ h1 {
 .about ul > li, .contact ul > li {
   color: #5b5bff;
 }
+
+.copy{
+	margin-bottom:10px;
+}
+
+ul.copy{
+margin-top: 0;}
 
 .copy, .copy li {
   line-height: 24px;
