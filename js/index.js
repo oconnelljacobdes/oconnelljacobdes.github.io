@@ -46,7 +46,11 @@ $('.tile').click(function(){
    show('showcase');
    switch(data){
 	   case 'reel':
-        $('.showcase').html('<div class="content"><h1>Reel 18</h1><div class="copy">My 2018 motion graphics reel. A collection of work from the past year.</div></div></div><iframe src="https://player.vimeo.com/video/283786610" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>');
+        $('.showcase').html('<div class="content"><h1>Reel 18</h1><div class="copy">My 2018 motion graphics reel. A collection of work from the past year.</div></div></div><iframe src="https://player.vimeo.com/video/283786610?color=ffffff&title=0&byline=0&portrait=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>');
+       break;
+	   
+	   case 'legend':
+        $('.showcase').html('<div class="content"><h1>Legend Has It - Run the Jewels</h1><div class="copy">The unofficial lyric video for Run the Jewel\'s Legend Has It.</div></div></div><iframe src="https://player.vimeo.com/video/265498095?color=ffffff&title=0&byline=0&portrait=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>');
        break;
 	   
 	   case 'closeshave':
