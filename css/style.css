@@ -204,22 +204,44 @@ body {
 }
 
 .showcase{
-    display:none;
     max-width:800px;
     margin:20px auto;
 }
 .showcase img{
-    display:block;
-    width:100%;
+  display:block;
+  width:100%;
 }
-.contact {
-  display: none;
+.page-holder{
+  position:relative;
+
+}
+.page {
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  transition-duration: 0.5s;
+}
+.page:not(.invisible) {
+  opacity: 1;
+}
+.page.invisible {
+  opacity: 0;
+  pointer-events:none;
+}
+.showcase-inner-1 {
+  background:red;
+}
+.showcase-inner-2 {
+  background:blue;
 }
 
 .about, .contact {
   max-width: 400px;
   margin: 0 auto;
-  display: none;
 }
 @media (max-width: 419px) {
   .about, .contact {
