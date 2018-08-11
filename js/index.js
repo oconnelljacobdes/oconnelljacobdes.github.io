@@ -72,15 +72,13 @@ $('.tile').click(function(){
    $('html,body').scrollTop(0);
 });
 function changeShowcase(html){
+  one.addClass('invisible');
+  two.addClass('invisible');
   if(isOneActive){
-    $('.showcase .showcase-inner-2').html(html);
-    one.addClass('invisible');
-    two.removeClass('invisible');
+    two.html(html).removeClass('invisible');
     isOneActive = false;
   }else {
-    $('.showcase .showcase-inner-1').html(html);
-    two.addClass('invisible');
-    one.removeClass('invisible');
+    one.html(html).removeClass('invisible');
     isOneActive = true; 
   }
 }
