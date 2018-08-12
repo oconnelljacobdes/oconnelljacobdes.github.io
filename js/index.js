@@ -43,7 +43,7 @@ function lookAt(ob, target, maxDist, maxRange) {
 $('.tile').click(function(){
    $('.nav.active').removeClass('active');
    var data = $(this).data('showcase');
-   show('showcase');
+   show('.showcase');
    switch(data){
 	   case 'reel':
         changeShowcase('<div class="content"><h1>Reel 18</h1><div class="copy">My 2018 motion graphics reel. A collection of work from the past year.</div></div></div><div class="iframe-holder"><iframe src="https://player.vimeo.com/video/283786610?color=ffffff&title=0&byline=0&portrait=0" width="800"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>');
@@ -71,35 +71,33 @@ $('.tile').click(function(){
    }
    $('html,body').scrollTop(0);
 });
+const cssFadeTransitionMillis = 500;
 function changeShowcase(html){
-  one.addClass('invisible');
-  two.addClass('invisible');
-  if(isOneActive){
-    two.html(html).removeClass('invisible');
-    isOneActive = false;
-  }else {
-    one.html(html).removeClass('invisible');
-    isOneActive = true; 
-  }
+  show('.showcase');
+  setTimeout(function() {
+    $('.showcase').html(html);
+  },cssFadeTransitionMillis)
 }
-let isOneActive = true;
-const one = $('.showcase .showcase-inner-1');
-const two = $('.showcase .showcase-inner-2');
 
 $('.nav').click(function(){
    $('.nav.active').removeClass('active');
    $(this).addClass('active');
-    show($(this).text().toLowerCase());
+    show(`.${$(this).text().toLowerCase()}`);
 });
 let showTimeout;
-function show(clas){
+let showTimeout2;
+function show(selector){
   const $hiddens = $('.work,.about,.contact,.showcase').addClass('invisible');
-  $hiddens.find('iframe').remove();
   // Show selected:
   clearTimeout(showTimeout);
   showTimeout = setTimeout(function (){
+    $hiddens.find('iframe').remove();
     $('.invisible').addClass('invisible-fully');
-    $('.' + clas).removeClass('invisible-fully invisible');
-  },500);
+    $(selector).removeClass('invisible-fully');
+    clearTimeout(showTimeout2);
+    showTimeout2 = setTimeout(function (){
+      $(selector).removeClass('invisible');
+    }, cssFadeTransitionMillis + 10);
+  },cssFadeTransitionMillis);
     
 }
