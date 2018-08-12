@@ -91,10 +91,15 @@ $('.nav').click(function(){
    $(this).addClass('active');
     show($(this).text().toLowerCase());
 });
+let showTimeout;
 function show(clas){
   const $hiddens = $('.work,.about,.contact,.showcase').addClass('invisible');
   $hiddens.find('iframe').remove();
   // Show selected:
-  $('.' + clas).removeClass('invisible');
+  clearTimeout(showTimeout);
+  showTimeout = setTimeout(function (){
+    $('.invisible').addClass('invisible-fully');
+    $('.' + clas).removeClass('invisible-fully invisible');
+  },500);
     
 }

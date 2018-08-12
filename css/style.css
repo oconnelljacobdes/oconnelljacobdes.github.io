@@ -221,9 +221,6 @@ body {
 .page:not(.invisible) {
   opacity: 1;
 }
-.invisible{
-  margin:0;
-}
 
 .iframe-holder {
   height: 0;
@@ -243,12 +240,9 @@ body {
 .page.invisible {
   opacity: 0;
   pointer-events:none;
-
-  position:absolute;
-  top:0;
-  left:0;
-  bottom:0;
-  right:0;
+}
+.invisible-fully {
+  display:none;
 }
 
 .about, .contact {
