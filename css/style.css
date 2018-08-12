@@ -206,6 +206,9 @@ body {
   display:block;
   width:100%;
 }
+.page-wrap{
+  overflow:hidden;
+}
 .page-holder{
   position:relative;
 
@@ -221,6 +224,22 @@ body {
 .invisible{
   margin:0;
 }
+
+.iframe-holder {
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.iframe-holder iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .page.invisible {
   opacity: 0;
   pointer-events:none;
