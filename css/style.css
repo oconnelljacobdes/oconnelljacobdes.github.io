@@ -240,6 +240,7 @@ body {
 .page.invisible {
   opacity: 0;
   pointer-events:none;
+  height: 0;
 }
 .invisible-fully {
   display:none;
